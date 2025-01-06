@@ -123,7 +123,8 @@ uint8_t spiRec() {
  * @details Uses DMA
  */
 void spiRead(uint8_t *buf, uint16_t nbyte) {
-  SPI.dmaTransfer(0, const_cast<uint8_t*>(buf), nbyte);
+  SPI.dmaTransfer(nullptr, const_cast<uint8_t*>(buf), nbyte);
+
 }
 
 /**

@@ -91,3 +91,6 @@
 #define SDSS                                PA3
 #define TFTGLCD_CS                          PA4
 #define SD_DETECT_PIN                       PC14
+// Release PA15 (Z_STEP_PIN), PB3 (Z_ENABLE_PIN) and PB4 (Y_DIR_PIN) from their respective JTAG roles
+//
+#define DISABLE_JTAG
